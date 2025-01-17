@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Mantenimiento</title>
+  <link rel="stylesheet" href="servicios1.css">
+</head>
+<body>
+  <header>
+    <h1>Reserva tu Mantenimiento</h1>
+    <p>Agenda una cita para el mantenimiento de tu PC o móvil</p>
+  </header>
+  <main>
+    <form id="reservation-form">
+      <label for="name">Nombre completo:</label>
+      <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
+
+      <label for="device">Tipo de dispositivo:</label>
+      <select id="device" name="device" required>
+        <option value="" disabled selected>Selecciona un dispositivo</option>
+        <option value="pc">PC</option>
+        <option value="movil">Celular móvil</option>
+      </select>
+
+      <label for="date">Fecha preferida:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Hora preferida:</label>
+      <input type="time" id="time" name="time" required>
+
+      <button type="submit">Reservar</button>
+    </form>
+    <div id="confirmation" class="hidden">
+      <h2>¡Reserva realizada con éxito!</h2>
+      <p>Nos pondremos en contacto contigo para confirmar los detalles.</p>
+    </div>
+  </main>
+  <script src="servicios2.js"></script>
+</body>
+</html>
